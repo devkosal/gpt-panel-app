@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/devkosal/gpt-panel-app/master)
+
 # Text Generator Web App
 
 This tutorial follows my guide on building a text generation web app with OpenGPT-2 and Panel. The guide can be found [here](https://medium.com/@devkosal/build-a-text-generator-web-app-in-under-50-lines-of-python-9b63d47edabb). 
