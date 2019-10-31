@@ -1,6 +1,0 @@
-dependencies:
-  - jupyter
-  - numpy==1.17.3
-  - transformers==2.1.1
-  - pyviz::panel==0.6.3
-  - pytorch::pytorch
