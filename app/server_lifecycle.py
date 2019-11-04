@@ -28,6 +28,8 @@ def getsize(obj):
 
 import gc
 gc.set_debug(gc.DEBUG_STATS)
+gc.set_debug(gc.DEBUG_SAVEALL)
+
 import sys
 def on_server_loaded(server_context):
     ''' If present, this function is called when the server first starts. '''
@@ -35,7 +37,7 @@ def on_server_loaded(server_context):
 
 def on_server_unloaded(server_context):
     ''' If present, this function is called when the server shuts down. '''
-    #on_session_destroyed(server_context)
+    on_session_destroyed(server_context)
     pass
 def on_session_created(session_context):
     ''' If present, this function is called when a session is created. '''
