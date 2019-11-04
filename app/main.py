@@ -91,5 +91,13 @@ desc = pn.pane.HTML("<i>Welcome to the text generator! In order to get started, 
 # setting up the final app
 final_app = pn.Column(pn.Row(h_spacer,title,h_spacer), desc ,app)
 
+#cleanup experiments
+
+def cleanup():
+    gc.collect()
+    print("Finished cleaning")
+
+final_app._cleanup = cleanup
+
 # this command is needed in order to serve this app in production mode. (make sure to uncomment ofcourse)
 final_app.servable()
