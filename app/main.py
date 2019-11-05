@@ -36,7 +36,7 @@ pn.extension() # loading panel's extension for jupyter compatibility
 
 
 text_input = pn.widgets.TextInput(value="",width=400)
-generated_text = pn.pane.Str(text_input.value)
+generated_text = pn.pane.Markdown(text_input.value)
 start_button = pn.widgets.Button(name="Generate",button_type="primary")
 
 # creating radio buttons for the token options along with probabilities 
@@ -85,7 +85,7 @@ app = pn.Column(text_input,radio_button,prob_button,start_button,generated_text)
 h_spacer = pn.layout.HSpacer()
 
 # defining the title and description 
-title = pn.pane.Str("# **Text Generator**")
+title = pn.pane.Markdown("# **Text Generator**")
 desc = pn.pane.HTML("<i>Welcome to the text generator! In order to get started, simply enter some starting input text below, click generate a few times and watch it go! You can also choose to select which token gets chosen using the radio buttons. Probabilities for each of which can be seen underneath. Give it a shot!</i>")
 
 # setting up the final app
